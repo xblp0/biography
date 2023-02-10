@@ -20,18 +20,15 @@
       animation-timing-function: ease-in;
       animation-duration: 2s;
     }
+    .center {
+      text-align: center;
+    }
     .fade-out {
-      opacity: 1;
-      animation-name: fadeInOpacity;
+      opacity: 0;
+      animation-name: fadeOutOpacity;
       animation-iteration-count: 1;
       animation-timing-function: ease-out;
       animation-duration: 1s;
-    }
-    .sportsgif {
-      display:none
-    }
-    .sports:hover + .sportsgif {
-      display: block;
     }
     @keyframes fadeInOpacity {
       0% {
@@ -41,11 +38,25 @@
         opacity: 1;
       }
     }
+    @keyframes fadeOutOpacity {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .sportsgif {
+      display: none;
+    }
+    .sports:hover + .sportsgif {
+      display: block;
+    }
     </style>
   </head>
   <body>
     <h1 class="fade-in center">Xavier Barrisford LePage's Interactive Biography</h1>
     <h3 class="sports">Sports</h3>
-    <div class="center fade-in sportsgif"><img src="https://media3.giphy.com/media/44zuwboiEZCXZD58Hv/giphy.gif"></img></div>
+    <div class="center fade-in fade-out sportsgif"><img src="https://media3.giphy.com/media/44zuwboiEZCXZD58Hv/giphy.gif"></img></div>
   </body>
 </html>
