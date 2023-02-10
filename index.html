@@ -12,6 +12,32 @@
       font-family: "Press Start 2P";
       background: black;
     }
+    .fade-in {
+      opacity: 1;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 2s;
+    }
+    .sportsgif {
+      display: none;
+    }
+    .sports:hover + .sportsgif {
+      display: block;
+    }
+    @keyframes fadeInOpacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
     </style>
   </head>
+  <body>
+    <h1 class="fade-in center">Xavier Barrisford LePage's Interactive Biography</h1>
+    <h3 class="sports">Sports</h3>
+    <div class="center fade-in sportsgif"><img src="https://media3.giphy.com/media/44zuwboiEZCXZD58Hv/giphy.gif"></img></div>
+  </body>
 </html>
