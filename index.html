@@ -50,6 +50,11 @@
       display: none;
     }
     .sports:hover + .sportsgif {
+      opacity: 0;
+      animation-name: fadeInOpacity;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 2s;
       display: block;
     }
     </style>
@@ -57,6 +62,6 @@
   <body>
     <h1 class="fade-in center">Xavier Barrisford LePage's Interactive Biography</h1>
     <h3 class="sports">Sports</h3>
-    <div class="center fade-in fade-out sportsgif"><img src="https://media3.giphy.com/media/44zuwboiEZCXZD58Hv/giphy.gif"></img></div>
+    <div class="center sportsgif"><img src="https://media3.giphy.com/media/44zuwboiEZCXZD58Hv/giphy.gif"></img></div>
   </body>
 </html>
